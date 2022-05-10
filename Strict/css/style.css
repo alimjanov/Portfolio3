@@ -1,0 +1,360 @@
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Lato';
+    font-weight: 400;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+a {
+    display: inline-block;
+}
+
+header {
+    background: url("../images/header_02.jpg") no-repeat center / cover;
+}
+
+header nav {
+    width: 100%;
+    background: #fff;
+    padding: 31px 0;
+}
+
+header nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+header nav .logo span {
+    font-size: 30px;
+    font-weight: 700;
+    color: #2d3950;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+
+header .header-text {
+    text-align: center;
+    padding: 216px 0 90px;
+}
+
+header .header-text .title {
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 0.8;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 2px solid #15a4fa;
+    width: 600px;
+    margin: 0 auto 40px;
+    padding-bottom: 35px;
+}
+
+.header-text .sub-title {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 65px;
+}
+
+.header-text .link {
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid #15a4fa;
+    padding: 21px 33px;
+    border-radius: 3px;
+    margin-bottom: 180px;
+    transition: 0.5s;
+}
+
+.header-text .link:hover {
+    background: #ffffff;
+    color: #15a4fa;
+}
+
+.header-text .arrow .fa {
+    font-size: 30px;
+    color: #ffffff;
+    animation: animate 2s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(-70px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(70px);
+        opacity: 0;
+    }
+}
+
+.simple {
+    background: #f9f9f9;
+    padding: 80px 0 110px;
+    text-align: center;
+}
+
+.simple h2 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #2d3950;
+    margin-bottom: 30px;
+}
+
+.simple p {
+    font-size: 20px;
+    color: #999;
+    line-height: 32px;
+}
+
+.services {
+    padding: 60px 0 65px;
+    background: #fff;
+}
+
+.services .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .item {
+    width: 260px;
+    text-align: center;
+}
+
+.services .icon {
+    width: 100px;
+    height: 100px;
+    background: #15a4fa;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 40px;
+
+    /*background: linear-gradient(to right top, red 50%, blue 50%);*/
+    background: radial-gradient(transparent, #15a4fa);
+}
+
+.services .item .icon .fa-mobile {
+    font-size: 70px;
+}
+
+.services .item .title {
+    font-size: 22px;
+    font-weight: 400;
+    color: #2d3950;
+    margin: 32px 0 22px;
+}
+
+.services .item p {
+    font-size: 15px;
+    color: #999;
+    line-height: 15px;
+}
+
+.folio {
+    background: #f9f9f9;
+    padding: 80px 0 115px;
+    text-align: center;
+}
+
+.folio .title {
+    font-size: 45px;
+    font-weight: 400;
+    color: #2d3950;
+}
+
+.folio .sub-title {
+    font-size: 15px;
+    color: #909090;
+    margin: 22px 0 80px;
+}
+
+.folio .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.folio .wrapper .image {
+    width: 360px;
+    height: 260px;
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.folio .wrapper .image img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.folio .wrapper .image .block {
+     position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(72, 185, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*opacity: 0;*/
+    transition: 0.5s;
+    transform: scale(0) rotate(0);
+}
+
+.folio .wrapper .image:hover .block {
+    /*opacity: 1;*/
+    transform: scale(1) rotate(360deg);
+}
+
+.folio .wrapper .image .block .fa {
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+    padding: 15px;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.contact {
+    padding: 75px 0 110px;
+    background: url("../images/footer_02.jpg") no-repeat center / cover;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 41px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.contact p {
+    font-size: 15px;
+    color: #999;
+    margin: 21px 0 51px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 555px;
+    margin: 0 auto;
+}
+
+.contact form .input {
+    width: 100%;
+    background: none;
+    border: 1px solid #999;
+    font-size: 15px;
+    color: #999;
+    padding: 25px 20px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.contact form .input:focus {
+    border-color: #15a4fa;
+}
+
+.contact form textarea {
+    height: 160px;
+    resize: none;
+}
+
+.contact .block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.contact .block span {
+    display: flex;
+    align-items: center;
+}
+
+.contact .block span label {
+    font-size: 15px;
+    color: #fff;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.contact .block button {
+    font-size: 18px;
+    color: #fff;
+    background: none;
+    padding: 16px 50px;
+    border: 1px solid #15a4fa;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact .block button:hover {
+    background: #fff;
+    color: #15a4fa;
+}
+
+footer {
+    background: #f6f6f9;
+    padding: 25px 0;
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social a {
+    background: #15a4fa;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    color: #fff;
+}
+
+footer .social a:hover {
+    background: #fff;
+    color: #15a4fa;
+    border: 1px solid #15a4fa;
+}
+
+
+
+
+
